@@ -1,5 +1,4 @@
-carousel-carousel
-=====================
+# Carousel-Carousel
 
 Script for creating simple, accessible carousels
 
@@ -100,10 +99,10 @@ Include more labels and their associated radio button for each carousel slide.
 There are accessibility features baked into the examples that you must maintain to maintain accessibility.
 
 * Always include a fieldset
-* Alwyas include a legend. The content of the legend should indicate the purpose of the list of options of the carousel-carousel. This is read by the screen reader.
+* Always include a legend. The content of the legend should indicate the purpose of the list of options of the carousel-carousel. This is read by the screen reader.
 * Always include label content that describes the content of the slide. Do not include form controls in the label. Avoid using links.
 * Always include a label for each radio button control, and associate the form control explicitly with the `for` and `id` attributes.
-* The forward and backward buttons are invisible to the screen reader, but required for usability. They are initially hidden, being displayed only if JavaScript is available and if there are more than one options. 
+* The forward and backward buttons are invisible to the screen reader. While not required, they do improve usability. They are initially hidden, being displayed only if JavaScript is available and if there are more than one option. 
 
 
 ## Browsers Tested
