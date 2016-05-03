@@ -13,10 +13,12 @@ The user can use the mouse or keyboard to tab through the carousel. Screen reade
 
 ## Examples
 
-A carousel of addresses. Selecting one submits the form along with the selected address option: 
+A carousel of addresses. Selecting one submits the form along with the selected address option:
+
 <http://estelle.github.io/carousel-carousel>
 
 A carousel of carousels. Selecting one redirects the user to the flickr page for that image.
+
 <http://estelle.github.io/carousel-carousel/horse.html>
 
 ## Quick Start
