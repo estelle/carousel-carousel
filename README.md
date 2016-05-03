@@ -87,7 +87,7 @@ Start off with semantic HTML. Here is the outline:
       </li>
     </ul>
     </fieldset>
-   <input type="submit" value="See it on Flickr">
+   <input type="submit" value="Put Submit Button Text Here">
 </form>
 ```
 

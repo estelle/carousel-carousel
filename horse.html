@@ -88,6 +88,7 @@ var radios = document.querySelectorAll('input[type=radio]'),
 
 for(i = 0; i < l; i++) {
   radios[i].addEventListener('change', function (e) {
+    console.log('changedvalue')
     changAction(e.target.name, e.target.value);
   })
 }
