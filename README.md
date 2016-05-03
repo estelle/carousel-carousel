@@ -116,26 +116,50 @@ There are accessibility features baked into the examples that you must maintain 
 * Firefox
 * Opera
 
+To do:
+
+Test Edge
+
 ## Customization
+
+See Options
 
 ### Initalization
 
+* To do: self initialize
+
 ### Options
 
-#### onError
+You must include the following variables and values in your SCSS files:
 
+``` HTML
+$themeColor: <color value for theme>;
+$arrowWidth: <the border-width of arrow''s two lines>;
+$arrowSize: <the length of those two lines>;
+$carouselWidth: <width of carousel in em units>;
+$carouselBorder: <none or border shorthand declaration>;
+$carouselRadius: <corners of the carousel>;
+$radioSpacing: <width of space between radio buttons>;
+```
 
 ## Documentation
 
 Handles these test cases:
 
-* Arrow keys can be used
+* Keyboard users: can tab and use arrow keys
+* Mouse users
+* Screen Readers
+
+To do: 
+
+* handle touch
 
 ## Exceptions
 
 
 ## ReactJS version
 
+To Do
 
 ## Contributors
 
