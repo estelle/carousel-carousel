@@ -1,13 +1,22 @@
 @charset "utf-8";
 
-$theme: blue;
-$carousel_width: 20em;
-$arrowwidth: 1px;
+// Variables
+$themeColor: blue;
+$carouselWidth: 20em;
+$arrowWidth: 1px;
+$arrowSize: 20px;
+$carouselBorder: 1px solid #bbbbbb;
+$radioSpacing: 20px;
+$carouselRadius: 5px;
 
+// General for all carousel carousels:
 @import "c_fieldset";
 @import "c_labels";
 @import "c_radios";
 @import "c_arrows";
 @import "c_carousel";
 
+
+// Specific to this example
 @import "example";
+@import "ex_address";

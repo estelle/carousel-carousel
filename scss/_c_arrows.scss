@@ -1,12 +1,15 @@
-/*/ ARROWS /*/
+//*/ -------/*/
+//*/ ARROWS /*/
+//*/ -------/*/
+
 .forward, 
 .backward {
   background: none;
   border: none;
-  color: $theme;
-  width: 20px;
-  height: 20px;
-  border: 2px solid;
+  color: $themeColor;
+  width: $arrowSize;
+  height: $arrowSize;
+  border: $arrowWidth solid;
   border-style: none none solid solid;
   transform: rotate(45deg);
   cursor: pointer; 
@@ -17,10 +20,10 @@
 .backward:hover,
 .forward:focus, 
 .backward:focus {
-  color: darken($theme, 20%);
+  color: darken($themeColor, 20%);
   outline: none;
   box-shadow: none;
-  border-width: 4px;
+  border-width: $arrowWidth + 2;
 }
 
 .forward {

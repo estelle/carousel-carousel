@@ -38,20 +38,24 @@ window.onload = function () {
 ```
 
 
-Add either the css file `carousel.css` to your page, or incorporate the .scss component into your sass build. 
+Add a css file of your own creation similar `carousel.css` to your page. Included in the repository are several Sass modules making up the `carousel.css`. I've included the CSS just like so: 
 
 
 ```html
 <link rel="stylesheet" href="path/css/carousel.css"/>
 ```
 
-Note you can change values:
+You should incorporate the .scss component into your sass build. Note you will want to change the following values to match your design and the width of the carousel:
 
 
 ```html
-$theme: blue;
-$carousel_width: 20em;
-$arrowwidth: 1px;
+$themeColor: blue;
+$arrowWidth: 1px;
+$arrowSize: 20px;
+$carouselBorder: 1px solid #bbbbbb;
+$carouselWidth: 20em;
+$carouselRadius: 5px;
+$radioSpacing: 20px;
 ```
 
 

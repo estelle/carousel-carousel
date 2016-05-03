@@ -1,3 +1,9 @@
+  // --------------------------------
+  // hide the legend and radio buttons 
+  // from sited users 
+  // without using display; none;
+  // --------------------------------
+  
   input[type=radio], 
   legend {
     opacity: 0;

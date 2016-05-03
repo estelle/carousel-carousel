@@ -1,14 +1,10 @@
 .carousel-labels li {
   box-sizing: border-box;
-  line-height: 1.6;
   display: flex;
   flex-direction: column;
-  border: 1px solid #bbbbbb;
-  border-radius: 5px;
-  background: #ffffff;
+  border-radius: $carouselRadius;
 }
 .carousel-labels li p {
-  font-size: 1rem;
   margin: 0; 
   text-align: center;
 }
@@ -21,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25em;
+    width: $carouselWidth + 5em;
     box-sizing: border-box;
     margin: auto; 
   div {
@@ -30,13 +26,13 @@
       ul {
         display: flex;
         align-items: stretch; 
-        width: $carousel_width;
+        width: $carouselWidth;
         overflow: hidden;
       }
       li {
-        border: 1px solid green;
+        border: $carouselBorder;
         justify-content: center;
-        flex: 0 0 $carousel_width;
+        flex: 0 0 $carouselWidth;
         transition: left 200ms;
         position: relative;
         left: 0; 
@@ -44,7 +40,7 @@
     $count: 0;
     @while $count < 20 {
       .left#{$count} li {
-        left: $count * $carousel_width * -1
+        left: $count * $carouselWidth * -1
       }
       $count: $count + 1
     }
