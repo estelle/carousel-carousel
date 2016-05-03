@@ -34,7 +34,7 @@ var carouselCarousel = {
     for (var i = 0; i < l; i++) {
       console.log(i + ' ' + l);
       arrowButtons[i].removeAttribute('hidden');
-      arrowButtons[i].setAttribute('tabindex', '0');
+      //arrowButtons[i].setAttribute('tabindex', '0');
       arrowButtons[i].addEventListener('click', function(e) {
         carouselCarousel.moveForwardOrBack(e);
       });
