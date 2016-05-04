@@ -67,22 +67,21 @@ window.onload = function () {
 };
 // This is specific for this carousel example.
 function addEvents(){
-  var radios = document.querySelectorAll('input[type=radio]'),
+  var radios = document.querySelectorAll('input[type=radio], [data-move]'),
       i = 0,
       l = radios.length;
   for(i = 0; i < l; i++) {
-    radios[i].addEventListener('change', function (e) {
-      changAction(e.target.name, e.target.value);
-      console.log('change');
-    })
+    radios[i].addEventListener('click', function (e) {
+      changAction();
+    });
   }
 }
 
-function changAction (name, value) {
-  var url = 'https://www.flickr.com/photos/' + value; 
-  var form = document.querySelector('form').setAttribute('action', url);
-  console.log(url)
+function changAction () {
+  var url = 'https://www.flickr.com/photos/' + document.querySelector('input[type=radio]:checked').value; 
+  document.querySelector('form').setAttribute('action', url);
 }
+
 </script>
 
 </body>
