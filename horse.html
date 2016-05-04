@@ -63,17 +63,19 @@
 <script>
 window.onload = function () {
   carouselCarousel.init('myCarousel');
+  addEvents();
 };
 // This is specific for this carousel example.
-var radios = document.querySelectorAll('input[type=radio]'),
-    i = 0,
-    l = radios.length;
-
-for(i = 0; i < l; i++) {
-  radios[i].addEventListener('change', function (e) {
-    console.log('changedvalue')
-    changAction(e.target.name, e.target.value);
-  })
+function addEvents(){
+  var radios = document.querySelectorAll('input[type=radio]'),
+      i = 0,
+      l = radios.length;
+  for(i = 0; i < l; i++) {
+    radios[i].addEventListener('change', function (e) {
+      changAction(e.target.name, e.target.value);
+      console.log('change');
+    })
+  }
 }
 
 function changAction (name, value) {

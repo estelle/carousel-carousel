@@ -19,8 +19,7 @@ var carouselCarousel = {
       }
       for(i = 0; i < l; i++) {
         radios[i].addEventListener('change', function (e) {
-          console.log('change')
-          carouselCarousel.carouselChange(e.target.name, e.target.dataset.value);
+          carouselCarousel.carouselChange(e.target.dataset.value);
         })
       }
     }
@@ -32,9 +31,7 @@ var carouselCarousel = {
     var arrowButtons = document.querySelectorAll('#' + carouselCarousel.carouselID +' [data-move]'),
         l = arrowButtons.length;
     for (var i = 0; i < l; i++) {
-      console.log(i + ' ' + l);
       arrowButtons[i].removeAttribute('hidden');
-      //arrowButtons[i].setAttribute('tabindex', '0');
       arrowButtons[i].addEventListener('click', function(e) {
         carouselCarousel.moveForwardOrBack(e);
       });
@@ -53,12 +50,10 @@ var carouselCarousel = {
             selectedButton = +document.querySelector('input[name=' + name + ']:checked').dataset.value,
             newValue = (buttons.length + selectedButton + move) % buttons.length;
         buttons[newValue].checked = true;
-        carouselCarousel.carouselChange(name, newValue);
+        carouselCarousel.carouselChange(newValue);
   },
 
-  carouselChange: function (name, value) {
-    name = 'carousel-labels';
-    var ul = document.querySelector('.' + name);
-    ul.setAttribute('class', name + ' left' + value);
+  carouselChange: function (value) {
+    document.querySelector('.carousel-labels').setAttribute('class', 'carousel-labels left' + value);
   }
 }

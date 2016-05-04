@@ -8,10 +8,6 @@
   input[type=radio], 
   legend {
     position: absolute;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px);
-    text-indent: 1px;
+    opacity: 0.01;
   }
 

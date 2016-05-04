@@ -7,7 +7,9 @@ Script for creating simple, accessible carousels
 
 `carousel-carousel.js`, along with a simple fieldset of radio buttons and associated labels enables you to create accessible carousels without frameworks and without a plethora of accessibility bugs or added ARIA maintenance.
 
-The user can use the mouse or keyboard to tab through the carousel. Screen reader users hear an accessible list of options.
+The user can use the mouse or keyboard to tab through the carousel. Screen reader users hear an accessible list of options. Keyboard users can navigate thru the faux radio buttons. Mouse users can click on any of the faux radio buttons or the forward and back arrows. The arrows are NOT focusable via tabbing as they are redundant, and the fourth rule of ARIA is 'Do not use `role="presentation"` or `aria-hidden="true"` on a visible focusable element.
+
+
 
 
 ## Examples
@@ -116,9 +118,15 @@ There are accessibility features baked into the examples that you must maintain 
 * Firefox
 * Opera
 
-To do:
+Needs Testing:
 
-Test Edge
+* Edge
+
+## Browsers / Screen Readers Tested
+
+* Safari with Voice Over
+* Firefox with Voice Over
+* Chrome with Chrome Vox
 
 ## Customization
 
@@ -126,7 +134,9 @@ See Options
 
 ### Initalization
 
-* To do: self initialize
+To do: 
+
+* self initialize
 
 ### Options
 
@@ -141,6 +151,8 @@ $carouselBorder: <none or border shorthand declaration>;
 $carouselRadius: <corners of the carousel>;
 $radioSpacing: <width of space between radio buttons>;
 ```
+
+If you're not using a preprocessor, you can grab `carousel.css` and make changes to your CSS as necessary.
 
 ## Documentation
 
