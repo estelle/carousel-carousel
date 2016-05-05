@@ -170,4 +170,8 @@ label {
   font-size: 1rem;
   line-height: 1.6; }
 
+.carousel-labels li p {
+  margin: 0;
+  text-align: center; }
+
 /*# sourceMappingURL=carousel.css.map */
